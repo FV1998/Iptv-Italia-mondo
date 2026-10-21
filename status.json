@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-10-21T16:10:52.038543+00:00",
+  "checked_at_utc": "2026-10-21T16:12:36.748829+00:00",
   "counts": {
-    "IT": 223,
+    "IT": 218,
     "ES": 169,
     "WORLD": 93
   },
@@ -418,8 +418,8 @@
       "country": "IT",
       "lcn": 66,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable"
     },
     {
       "name": "R101 TV",
@@ -427,8 +427,8 @@
       "country": "IT",
       "lcn": 67,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons"
     },
     {
       "name": "Deejay TV",
@@ -562,8 +562,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons"
     },
     {
       "name": "111 Tv",
@@ -985,8 +985,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "HTTP Error 403: Forbidden"
     },
     {
       "name": "è Tv Marche",
@@ -1156,8 +1156,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Italia 8 Prestige",
@@ -1237,8 +1237,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Lira Tv",
@@ -1822,8 +1822,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "The read operation timed out"
     },
     {
       "name": "RDE Tv",
@@ -2317,8 +2317,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "available": false,
+      "detail": "The read operation timed out"
     },
     {
       "name": "Tele Estense",
@@ -2849,7 +2849,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "TeleRegione Live",
@@ -2912,7 +2912,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Telesveva",
@@ -3209,7 +3209,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Zerouno Tv News",
@@ -3217,8 +3217,158 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
+      "available": true,
+      "detail": "HLS manifest and media segment reachable"
+    },
+    {
+      "name": "Rai 1",
+      "country": "IT",
+      "lcn": 1,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai 2",
+      "country": "IT",
+      "lcn": 2,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai 3",
+      "country": "IT",
+      "lcn": 3,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai 4",
+      "country": "IT",
+      "lcn": 21,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai 5",
+      "country": "IT",
+      "lcn": 23,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Movie",
+      "country": "IT",
+      "lcn": 24,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Premium",
+      "country": "IT",
+      "lcn": 25,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Gulp",
+      "country": "IT",
+      "lcn": 42,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Yoyo",
+      "country": "IT",
+      "lcn": 43,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai News 24",
+      "country": "IT",
+      "lcn": 48,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Storia",
+      "country": "IT",
+      "lcn": 54,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Scuola",
+      "country": "IT",
+      "lcn": 57,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai Sport",
+      "country": "IT",
+      "lcn": 58,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "Rai 4K",
+      "country": "IT",
+      "lcn": 101,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "Mozilla/5.0",
+      "url": "https://raievent10-elem-live.akamaized.net/hls/live/619189/raievent10/raievent10/playlist.m3u8",
+      "available": false,
+      "detail": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Rai Radio 2 Visual Radio",
+      "country": "IT",
+      "lcn": 202,
+      "source": "https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u",
+      "user_agent": "HbbTV/1.6.1",
+      "url": "http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=5674080&output=7&forceUserAgent=raiplayappletv",
+      "available": false,
+      "detail": "HTTP Error 503: Service Unavailable"
     },
     {
       "name": "Rai Sudtirol",
@@ -4109,7 +4259,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream2.parlamentodeandalucia.es/realizacion3/realizacion3/playlist.m3u8",
       "available": false,
-      "detail": "The read operation timed out"
+      "detail": "<urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "name": "Parlamento de Andalucía",
