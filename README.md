@@ -4,7 +4,7 @@ Playlist unica senza categorie o gruppi:
 
 **https://raw.githubusercontent.com/FV1998/Iptv-Italia-mondo/main/playlist.m3u**
 
-Ordine: Italia per LCN disponibile, Spagna, canali internazionali. Non è una lista completa di tutti i canali terrestri: vengono pubblicati i flussi pubblici delle fonti selezionate che superano i controlli, con l’eccezione esplicita dei collegamenti ufficiali Rai/Mediaset che restituiscono 403/451: sono mantenuti per l’uso dall’Italia ma NON dichiarati funzionanti. I numeri LCN servono per l'ordinamento e non creano gruppi nel lettore.
+Ordine: Italia per LCN disponibile, Spagna, canali internazionali. Non è una lista completa di tutti i canali terrestri: vengono pubblicati i flussi pubblici delle fonti selezionate che superano i controlli, con l’eccezione esplicita dei collegamenti ufficiali Rai/Mediaset che restituiscono 403/451: sono mantenuti per l’uso dall’Italia ma NON dichiarati funzionanti. I numeri LCN servono per l'ordinamento e non creano gruppi nel lettore. Ogni canale ha il nome sia nel campo standard EXTINF sia nell’attributo tvg-name, per mostrarlo nell’elenco prima della riproduzione.
 
 ## Fonti e selezione
 
