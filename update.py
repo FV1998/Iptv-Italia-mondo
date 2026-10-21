@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent
 ITALY = 'https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md'
 TDT = 'https://www.tdtchannels.com/lists/tv.m3u8'
 TUNDRAK = 'https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u'
+FULGIONE = 'https://davidefulgione.com/tv.m3u'
 # Only broadcaster-owned origins or explicitly identified broadcaster CDN endpoints.
 ITALIAN_HOSTS = {'streaming.aurora.enhanced.live', 'mediapolis.rai.it', 'live02-seg.msf.cdn.mediaset.net',
                  'hls-live-tv2000.akamaized.net', 'qrg.akamaized.net',
@@ -58,6 +59,23 @@ def candidates():
         name = re.sub(r'[ⒼⓈⓉⓎ]', '', cols[2]).strip()
         lcn = int(cols[1]) if section == 'National DVB-T' and cols[1].isdigit() and int(cols[1]) > 0 else None
         result.append(dict(name=name, url=match[1], country='IT', lcn=lcn, source=ITALY))
+    # The user requested these official Rai links; retain access-limited endpoints
+    # separately from verified streams, since a foreign CI runner cannot verify Italy.
+    rai_lcn = {'Rai 1':1,'Rai 2':2,'Rai 3':3,'Rai 4':21,'Rai 5':23,
+               'Rai Movie':24,'Rai Premium':25,'Rai Storia':54,'Rai Scuola':57,
+               'Rai Sport':58,'Rai News 24':48}
+    rai_name = None
+    additional = []
+    for line in text(FULGIONE).splitlines():
+        if line.startswith('#EXTINF:'):
+            rai_name = line.rsplit(',',1)[-1].strip()
+            if rai_name == 'Rai News':
+                rai_name = 'Rai News 24'
+        elif line.startswith('https://') and rai_name in rai_lcn:
+            if urlsplit(line).hostname == 'mediapolis.rai.it':
+                additional.append(dict(name=rai_name, country='IT', lcn=rai_lcn[rai_name], url=line, source=FULGIONE))
+            rai_name = None
+    result = additional + result
     rai_meta = None
     for line in text(TUNDRAK).splitlines():
         if line.startswith('#EXTINF:'):
@@ -125,7 +143,7 @@ def check(item):
         return dict(item, available=False, detail=str(exc)[:250])
 
 def render(items):
-    lines = ['#EXTM3U', '# Sources: LaQuay/TDTChannels; Free-TV/IPTV; Tundrak/IPTV-Italia. Modified: filtered, verified and reordered.']
+    lines = ['#EXTM3U', '# Sources: LaQuay/TDTChannels; Free-TV/IPTV; Tundrak/IPTV-Italia; davidefulgione.com. Modified: filtered, verified and reordered.']
     for c in items:
         name = c['name'].replace('\n',' ').replace('\r',' ')
         lines.append(f'#EXTINF:-1,{name}')
@@ -138,11 +156,15 @@ def main():
     pool = candidates()
     with cf.ThreadPoolExecutor(max_workers=16) as executor:
         checked = list(executor.map(check,pool))
-    good, seen = [], set()
-    for c in checked:
+    good, seen, seen_urls = [], set(), set()
+    # Prefer a verified alternative over any access-limited official endpoint.
+    for c in sorted(checked, key=lambda c: not c['available']):
         key = (c['country'], c['name'].casefold().replace(' geo cat','').replace(' geo',''))
-        if c['available'] and key not in seen:
-            good.append(c); seen.add(key)
+        host = urlsplit(c['url']).hostname or ''
+        official_limited = (host == 'mediapolis.rai.it' or host.endswith('.cdn.mediaset.net')) and any(code in c['detail'] for code in ('HTTP Error 403:', 'HTTP Error 451:'))
+        if (c['available'] or official_limited) and key not in seen and c['url'] not in seen_urls:
+            c['included_reason'] = 'verified' if c['available'] else 'official_access_limited_not_verified'
+            good.append(c); seen.add(key); seen_urls.add(c['url'])
     good.sort(key=lambda c: ({'IT':0,'ES':1,'WORLD':2}[c['country']], c['lcn'] or 9999, c['name'].casefold()))
     counts = {country:sum(c['country']==country for c in good) for country in ('IT','ES','WORLD')}
     if any(n==0 for n in counts.values()):
@@ -156,7 +178,9 @@ def main():
     assert 'group-title' not in output and '#EXTGRP' not in output
     (ROOT/'playlist.m3u').write_text(output,encoding='utf-8')
     report = {'checked_at_utc':dt.datetime.now(dt.timezone.utc).isoformat(), 'counts':counts,
-              'verification':'HLS manifest, variant and sample media bytes; not a full playback or territorial guarantee',
+              'verified_counts':{country:sum(c['country']==country and c['available'] for c in good) for country in counts},
+              'access_limited_included':[c['name'] for c in good if not c['available']],
+              'verification':'Verified entries: HLS manifest, variant and sample media bytes. Official Rai/Mediaset HTTP 403/451 entries are included but NOT playback-verified. No territorial or full playback guarantee.',
               'channels':checked}
     (ROOT/'status.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(counts))
