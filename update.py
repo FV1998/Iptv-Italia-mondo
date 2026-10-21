@@ -11,8 +11,20 @@ ROOT = Path(__file__).resolve().parent
 ITALY = 'https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md'
 TDT = 'https://www.tdtchannels.com/lists/tv.m3u8'
 # Only broadcaster-owned origins or explicitly identified broadcaster CDN endpoints.
-ITALIAN_HOSTS = {'mediapolis.rai.it', 'live02-seg.msf.cdn.mediaset.net',
-                 'hls-live-tv2000.akamaized.net', 'qrg.akamaized.net'}
+ITALIAN_HOSTS = {'streaming.aurora.enhanced.live', 'mediapolis.rai.it', 'live02-seg.msf.cdn.mediaset.net',
+                 'hls-live-tv2000.akamaized.net', 'qrg.akamaized.net',
+ 'live02-seg.msr.cdn.mediaset.net', 'radioitaliatv.akamaized.net',
+ 'ilsole24ore-radiovisual.akamaized.net', 'stream.rdstv.radio',
+ 'legaseriea-live-prd.cdn.netrw.it', 'distribution.sportitalialive.it',
+ 'live-embed.supertennix.hiway.media', 'sportsitalia-samsungitaly.amagi.tv'}
+LOCAL_CDNS = ('streamlock.net','xdevel.com','netrw.it','streamshow.it','msvdn.net',
+ 'arcapuglia.it','saiuzwebnetwork.it','rtvweb.com','aswifi.it','softwarecreation.it',
+ 'streamingwebtv24.it','ipstream.it','mediastreaming.it','newradio.it','selftv.video',
+ 'mariatvcdn.com','mariatvcdn.it','ets-sistemi.it','telemia.tv','telesveva.com',
+ 'nuovatv.net','velcom.it','azotosolutions.com','tvavicenza.it','teleromagna.it',
+ 'top-ix.org','fluid.stream','seeweb.it','zivoli.it','radiotv.it','paroledivita.org',
+ 'telesirio.it','teleterni.it','videolina.it','granducatotv.eu','liberta.it',
+ 'trgmedia.it','ntimedia.it','nuvola.tv','rossinitv.it','rubidia.it','uno4.it')
 SPANISH_GROUPS = {'Generalistas','Deportivos','Andalucía','Cataluña','C. Valenciana',
  'Canarias','País Vasco','Galicia','Castilla-La Mancha','C. de Madrid','Castilla y León',
  'R. de Murcia','Cantabria','C. Foral de Navarra','Extremadura','La Rioja','Illes Balears',
@@ -28,16 +40,24 @@ def text(url):
 
 def candidates():
     result = []
+    section = ''
     for line in text(ITALY).splitlines():
+        if '<h2>' in line:
+            section = re.sub('<[^>]*>', '', line).strip()
         if not line.startswith('|') or '[>]' not in line:
             continue
         cols = [c.strip() for c in line.split('|')]
         match = re.search(r'\[>\]\((https?://[^)]+)\)', cols[3])
-        if not match or urlsplit(match[1]).hostname not in ITALIAN_HOSTS:
+        if not match:
+            continue
+        host = urlsplit(match[1]).hostname or ''
+        local_origin = any(host == h or host.endswith('.'+h) for h in LOCAL_CDNS)
+        if host not in ITALIAN_HOSTS and not (local_origin and section in ('Regional DVB-T','National DVB-T')):
             continue
         name = re.sub(r'[ⒼⓈⓉⓎ]', '', cols[2]).strip()
-        lcn = int(cols[1]) if cols[1].isdigit() and int(cols[1]) > 0 else None
+        lcn = int(cols[1]) if section == 'National DVB-T' and cols[1].isdigit() and int(cols[1]) > 0 else None
         result.append(dict(name=name, url=match[1], country='IT', lcn=lcn, source=ITALY))
+    result.extend([dict(name='Rai Sudtirol', url='https://wzstreaming.rai.it/TVlive/smil:liveStream.smil/index.m3u8', country='IT', lcn=None, source='https://www.raisudtirol.rai.it/'), dict(name='Rai News 24', url='https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8', country='IT', lcn=48, source='https://www.raiplay.it/dirette/rainews24')])
     meta = None
     for line in text(TDT).splitlines():
         if line.startswith('#EXTINF:'):
