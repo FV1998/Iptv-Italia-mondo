@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 ITALY = 'https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md'
 TDT = 'https://www.tdtchannels.com/lists/tv.m3u8'
+TUNDRAK = 'https://raw.githubusercontent.com/Tundrak/IPTV-Italia/main/iptvitaplus.m3u'
 # Only broadcaster-owned origins or explicitly identified broadcaster CDN endpoints.
 ITALIAN_HOSTS = {'streaming.aurora.enhanced.live', 'mediapolis.rai.it', 'live02-seg.msf.cdn.mediaset.net',
                  'hls-live-tv2000.akamaized.net', 'qrg.akamaized.net',
@@ -30,8 +31,8 @@ SPANISH_GROUPS = {'Generalistas','Deportivos','Andalucía','Cataluña','C. Valen
  'R. de Murcia','Cantabria','C. Foral de Navarra','Extremadura','La Rioja','Illes Balears',
  'Melilla','P. de Asturias'}
 
-def fetch(url, limit=3_000_000):
-    req = ur.Request(url, headers={'User-Agent':'Mozilla/5.0 (IPTV public-stream check)'})
+def fetch(url, limit=3_000_000, user_agent=None):
+    req = ur.Request(url, headers={'User-Agent':user_agent or 'Mozilla/5.0 (IPTV public-stream check)'})
     with ur.urlopen(req, timeout=12) as r:
         return r.read(limit), r.url
 
@@ -57,6 +58,22 @@ def candidates():
         name = re.sub(r'[ⒼⓈⓉⓎ]', '', cols[2]).strip()
         lcn = int(cols[1]) if section == 'National DVB-T' and cols[1].isdigit() and int(cols[1]) > 0 else None
         result.append(dict(name=name, url=match[1], country='IT', lcn=lcn, source=ITALY))
+    rai_meta = None
+    for line in text(TUNDRAK).splitlines():
+        if line.startswith('#EXTINF:'):
+            attrs = dict(re.findall(r'([\w-]+)="([^"]*)"', line))
+            name = line.rsplit(',',1)[-1].strip()
+            name = name.replace(' (HbbTV)','').replace(' + HD','')
+            if name == 'Rai Radio 2 Visual':
+                name = 'Rai Radio 2 Visual Radio'
+            rai_meta = dict(name=name, country='IT', lcn=int(attrs['tvg-chno']) if attrs.get('tvg-chno','').isdigit() else None, source=TUNDRAK) if name.startswith('Rai ') else None
+        elif rai_meta and line.startswith('#EXTVLCOPT:http-user-agent='):
+            rai_meta['user_agent'] = line.split('=',1)[1]
+        elif rai_meta and line.startswith(('http://','https://')):
+            host = urlsplit(line).hostname or ''
+            if host.endswith('.rai.it') or host == 'raievent10-elem-live.akamaized.net':
+                result.append(dict(rai_meta, url=line.strip()))
+            rai_meta = None
     result.extend([dict(name='Rai Sudtirol', url='https://wzstreaming.rai.it/TVlive/smil:liveStream.smil/index.m3u8', country='IT', lcn=None, source='https://www.raisudtirol.rai.it/'), dict(name='Rai News 24', url='https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8', country='IT', lcn=48, source='https://www.raiplay.it/dirette/rainews24')])
     meta = None
     for line in text(TDT).splitlines():
@@ -73,10 +90,10 @@ def candidates():
         raise RuntimeError('Source parsing failed; existing playlist preserved')
     return result
 
-def probe_hls(url, depth=0):
+def probe_hls(url, depth=0, user_agent=None):
     if depth > 3:
         raise ValueError('Too many nested playlists')
-    data, final = fetch(url)
+    data, final = fetch(url, user_agent=user_agent)
     body = data.decode('utf-8-sig')
     if not body.lstrip().startswith('#EXTM3U'):
         raise ValueError('Not an HLS manifest')
@@ -88,30 +105,33 @@ def probe_hls(url, depth=0):
         variants = [urljoin(final,lines[i+1]) for i,l in enumerate(lines[:-1]) if l.startswith('#EXT-X-STREAM-INF:')]
         for variant in variants[:3]:
             try:
-                return probe_hls(variant, depth+1)
+                return probe_hls(variant, depth+1, user_agent)
             except Exception as exc:
                 errors.append(str(exc))
         raise ValueError('Variants unavailable: ' + '; '.join(errors))
     segments = [urljoin(final,x) for x in lines if not x.startswith('#')]
     if not segments or '#EXTINF:' not in body:
         raise ValueError('No media segments')
-    segment, _ = fetch(segments[-1], 1024)
+    segment, _ = fetch(segments[-1], 1024, user_agent)
     if not segment or segment.lstrip().lower().startswith((b'<html',b'<!doctype')):
         raise ValueError('Invalid media response')
     return 'HLS manifest and media segment reachable'
 
 def check(item):
     try:
-        detail = probe_hls(item['url'])
+        detail = probe_hls(item['url'], user_agent=item.get('user_agent'))
         return dict(item, available=True, detail=detail)
     except Exception as exc:
         return dict(item, available=False, detail=str(exc)[:250])
 
 def render(items):
-    lines = ['#EXTM3U', '# Sources: LaQuay/TDTChannels; Free-TV/IPTV. Modified: filtered, verified and reordered.']
+    lines = ['#EXTM3U', '# Sources: LaQuay/TDTChannels; Free-TV/IPTV; Tundrak/IPTV-Italia. Modified: filtered, verified and reordered.']
     for c in items:
         name = c['name'].replace('\n',' ').replace('\r',' ')
-        lines.extend([f'#EXTINF:-1,{name}', c['url']])
+        lines.append(f'#EXTINF:-1,{name}')
+        if c.get('user_agent'):
+            lines.append('#EXTVLCOPT:http-user-agent='+c['user_agent'].replace('\n','').replace('\r',''))
+        lines.append(c['url'])
     return '\n'.join(lines)+'\n'
 
 def main():
