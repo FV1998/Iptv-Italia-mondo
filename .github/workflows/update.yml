@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -30,5 +33,6 @@ jobs:
           git add playlist.m3u status.json
           if ! git diff --staged --quiet; then
             git commit -m 'Aggiorna playlist e controllo disponibilità'
+            git pull --rebase origin main
             git push
           fi
