@@ -146,7 +146,8 @@ def render(items):
     lines = ['#EXTM3U', '# Sources: LaQuay/TDTChannels; Free-TV/IPTV; Tundrak/IPTV-Italia; davidefulgione.com. Modified: filtered, verified and reordered.']
     for c in items:
         name = c['name'].replace('\n',' ').replace('\r',' ')
-        lines.append(f'#EXTINF:-1,{name}')
+        display_name = name.replace(chr(34), chr(39))
+        lines.append(f'#EXTINF:-1 tvg-name="{display_name}",{name}')
         if c.get('user_agent'):
             lines.append('#EXTVLCOPT:http-user-agent='+c['user_agent'].replace('\n','').replace('\r',''))
         lines.append(c['url'])
