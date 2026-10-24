@@ -1,13 +1,13 @@
 {
-  "checked_at_utc": "2026-10-23T09:26:29.059526+00:00",
+  "checked_at_utc": "2026-10-24T08:57:37.455216+00:00",
   "counts": {
-    "IT": 253,
-    "ES": 168,
+    "IT": 250,
+    "ES": 165,
     "WORLD": 93
   },
   "verified_counts": {
-    "IT": 221,
-    "ES": 168,
+    "IT": 218,
+    "ES": 165,
     "WORLD": 93
   },
   "access_limited_included": [
@@ -571,9 +571,8 @@
       "country": "IT",
       "lcn": 62,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "SuperTennis",
@@ -590,9 +589,8 @@
       "country": "IT",
       "lcn": 65,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Radio 105 TV",
@@ -1132,9 +1130,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Di.Tv 92",
@@ -1191,9 +1188,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Espansione Tv",
@@ -1221,8 +1217,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "è Tv Marche",
@@ -1258,7 +1255,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Extra Tv",
@@ -1485,9 +1482,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Lira Tv",
@@ -1910,8 +1906,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "HTTP Error 403: Forbidden"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Radio Immagine Tv",
@@ -2553,8 +2550,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "Variants unavailable: HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Tele Arena",
@@ -2729,9 +2727,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Tele Lacco Ameno",
@@ -3123,7 +3120,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Telecity Valle D'Aosta",
@@ -4692,8 +4689,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8",
-      "available": false,
-      "detail": "The read operation timed out"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4702,8 +4700,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream2.parlamentodeandalucia.es/realizacion2/realizacion2/playlist.m3u8",
       "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "detail": "HLS manifest and media segment reachable"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4854,9 +4851,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://cloudvideo.servers10.com:8081/8028/index.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Este Canal TV",
@@ -4912,9 +4908,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://cloudvideo.servers10.com:8081/8108/index.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Saja Nansa TV",
@@ -5843,9 +5838,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream.burrianateve.com:8443/hls/abr_burrianateve/index.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "The read operation timed out"
     },
     {
       "name": "TV 4 La Vall",
@@ -6197,7 +6191,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://tef.servertv.online:3268/live/teflive.m3u8",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Canal 4 TV Mallorca",
@@ -7124,9 +7118,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://live-edge-par-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/live-telepacifico/index.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Invalid media response"
     },
     {
       "name": "Telepacífico Colombia",
@@ -7135,7 +7128,8 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://live-edge-par-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC022/live-origen/index.m3u8",
       "available": true,
-      "detail": "HLS manifest and media segment reachable"
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Canal Telecaribe Colombia",
