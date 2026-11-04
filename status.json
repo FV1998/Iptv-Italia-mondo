@@ -1,14 +1,14 @@
 {
-  "checked_at_utc": "2026-11-03T12:02:15.781951+00:00",
+  "checked_at_utc": "2026-11-04T12:17:26.716514+00:00",
   "counts": {
-    "IT": 253,
-    "ES": 168,
-    "WORLD": 92
+    "IT": 255,
+    "ES": 167,
+    "WORLD": 91
   },
   "verified_counts": {
-    "IT": 221,
-    "ES": 168,
-    "WORLD": 92
+    "IT": 222,
+    "ES": 167,
+    "WORLD": 91
   },
   "access_limited_included": [
     "Rai 1",
@@ -39,6 +39,7 @@
     "Mediaset Extra",
     "Rai Scuola",
     "Rai Sport",
+    "Radio 105 TV",
     "R101 TV",
     "Rai Radio 2 Visual Radio",
     "Radio Montecarlo TV",
@@ -571,8 +572,9 @@
       "country": "IT",
       "lcn": 62,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "<urlopen error timed out>"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "SuperTennis",
@@ -589,8 +591,9 @@
       "country": "IT",
       "lcn": 65,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Radio 105 TV",
@@ -598,9 +601,9 @@
       "country": "IT",
       "lcn": 66,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons",
+      "included_reason": "official_access_limited_not_verified"
     },
     {
       "name": "R101 TV",
@@ -1130,9 +1133,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Di.Tv 92",
@@ -1189,9 +1191,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Espansione Tv",
@@ -1257,7 +1258,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Extra Tv",
@@ -1334,8 +1335,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "GO-TV Channel",
@@ -1810,8 +1812,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Radio 3M InBlu",
@@ -2117,8 +2120,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "The read operation timed out"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "RDE Tv",
@@ -2253,7 +2257,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
     },
     {
       "name": "Rossini Tv",
@@ -2378,7 +2382,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Sardegna 1",
@@ -2414,9 +2418,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Sicilia Tv",
@@ -2650,8 +2653,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "The read operation timed out"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Tele Estense",
@@ -3095,7 +3099,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Telecampione",
@@ -3104,7 +3108,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 403: Forbidden"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Telecity Lombardia",
@@ -3122,7 +3126,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Telecity Valle D'Aosta",
@@ -3131,7 +3135,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "TeleCostaSmeralda",
@@ -3224,7 +3228,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "TeleRent 7Gold",
@@ -3242,7 +3246,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 403: Forbidden"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Teleromagna",
@@ -3317,9 +3321,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Tremedia Tv",
@@ -4692,7 +4695,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+      "detail": "Variants unavailable: The read operation timed out"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4710,8 +4713,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream2.parlamentodeandalucia.es/realizacion3/realizacion3/playlist.m3u8",
-      "available": false,
-      "detail": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4798,7 +4801,7 @@
       "included_reason": "verified"
     },
     {
-      "name": "Tenerife Plus TV",
+      "name": "Tenerife Más TV",
       "country": "ES",
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
@@ -5020,8 +5023,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://secure3.todostreaming.es/live/imastv-livestream.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Canal 4 Mancha",
@@ -5881,9 +5885,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "TV Almassora",
@@ -6252,7 +6255,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://cdn1.etbon.eus/etb1/index.m3u8",
       "available": false,
-      "detail": "<urlopen error [Errno -2] Name or service not known>"
+      "detail": "Variants unavailable: Encrypted stream omitted; Encrypted stream omitted; Encrypted stream omitted"
     },
     {
       "name": "ETB 2",
@@ -6338,9 +6341,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://streaming.ukt.eus/hls/test.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Goiena Eus",
@@ -7206,9 +7208,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://videoserver.tmcreativos.com:19360/tvcosmos/tvcosmos.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "TeleSUR Venezuela",
