@@ -1,14 +1,14 @@
 {
-  "checked_at_utc": "2026-11-04T12:17:26.716514+00:00",
+  "checked_at_utc": "2026-11-05T12:31:05.689292+00:00",
   "counts": {
-    "IT": 255,
-    "ES": 167,
-    "WORLD": 91
+    "IT": 252,
+    "ES": 166,
+    "WORLD": 90
   },
   "verified_counts": {
-    "IT": 222,
-    "ES": 167,
-    "WORLD": 91
+    "IT": 220,
+    "ES": 166,
+    "WORLD": 90
   },
   "access_limited_included": [
     "Rai 1",
@@ -42,7 +42,6 @@
     "Radio 105 TV",
     "R101 TV",
     "Rai Radio 2 Visual Radio",
-    "Radio Montecarlo TV",
     "Virgin Radio TV"
   ],
   "verification": "Verified entries: HLS manifest, variant and sample media bytes. Official Rai/Mediaset HTTP 403/451 entries are included but NOT playback-verified. No territorial or full playback guarantee.",
@@ -750,9 +749,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons",
-      "included_reason": "official_access_limited_not_verified"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Virgin Radio TV",
@@ -947,9 +946,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "BOM Channel",
@@ -987,7 +985,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for '635320cd397eb.streamlock.net'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for '635320cd397eb.streamlock.net'. (_ssl.c:1011)>"
     },
     {
       "name": "Calabria tv",
@@ -1346,7 +1344,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "GS Channel",
@@ -1648,9 +1646,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Odeon 24",
@@ -1659,7 +1656,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
     },
     {
       "name": "Onda Novara Tv",
@@ -2257,7 +2254,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
     },
     {
       "name": "Rossini Tv",
@@ -2382,7 +2379,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Sardegna 1",
@@ -2487,7 +2484,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
     },
     {
       "name": "TRG Media",
@@ -3126,7 +3123,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Telecity Valle D'Aosta",
@@ -3135,7 +3132,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "TeleCostaSmeralda",
@@ -3171,7 +3168,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
     },
     {
       "name": "Teleleonessa",
@@ -3219,7 +3216,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
     },
     {
       "name": "TeleRegione Live",
@@ -3485,7 +3482,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Not an HLS manifest"
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Video Calabria",
@@ -3590,9 +3587,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Zerouno Tv Music",
@@ -4433,9 +4429,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=13354&live=1",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 400: Bad Request"
     },
     {
       "name": "Canal Doñana",
@@ -4694,15 +4689,6 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8",
-      "available": false,
-      "detail": "Variants unavailable: The read operation timed out"
-    },
-    {
-      "name": "Parlamento de Andalucía",
-      "country": "ES",
-      "lcn": null,
-      "source": "https://www.tdtchannels.com/lists/tv.m3u8",
-      "url": "https://stream2.parlamentodeandalucia.es/realizacion2/realizacion2/playlist.m3u8",
       "available": true,
       "detail": "HLS manifest and media segment reachable",
       "included_reason": "verified"
@@ -4712,9 +4698,18 @@
       "country": "ES",
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
-      "url": "https://stream2.parlamentodeandalucia.es/realizacion3/realizacion3/playlist.m3u8",
+      "url": "https://stream2.parlamentodeandalucia.es/realizacion2/realizacion2/playlist.m3u8",
       "available": true,
       "detail": "HLS manifest and media segment reachable"
+    },
+    {
+      "name": "Parlamento de Andalucía",
+      "country": "ES",
+      "lcn": null,
+      "source": "https://www.tdtchannels.com/lists/tv.m3u8",
+      "url": "https://stream2.parlamentodeandalucia.es/realizacion3/realizacion3/playlist.m3u8",
+      "available": false,
+      "detail": "The read operation timed out"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -5023,9 +5018,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://secure3.todostreaming.es/live/imastv-livestream.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Canal 4 Mancha",
@@ -5073,7 +5067,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.ccyl.es/Hemiciclo/smil:Hemiciclo.smil/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Cortes de Castilla y León",
@@ -5082,7 +5076,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.ccyl.es/CortesDeLeon/smil:CortesDeLeon.smil/playlist.m3u8?DVR",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Cortes de Castilla y León",
@@ -5091,7 +5085,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.ccyl.es/CamposDeCastilla/smil:CamposDeCastilla.smil/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Cortes de Castilla y León",
@@ -5100,7 +5094,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.ccyl.es/CastilloDeFuensaldana/smil:CastilloDeFuensaldana.smil/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Junta de Castilla y León",
@@ -6140,8 +6134,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://crtvg-universo-castelao-schlive.flumotion.cloud/playlist.m3u8",
-      "available": false,
-      "detail": "Variants unavailable: HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "TV Ferrol",
@@ -6150,7 +6145,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.tvferrol.es/tv.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Telemiño",
@@ -6178,9 +6173,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://pgalicia-live.akamaized.net/hls/live/2040697/pleno/playlist.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: HTTP Error 404: Not Found; HTTP Error 404: Not Found"
     },
     {
       "name": "Xunta de Galicia",
@@ -6228,7 +6222,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://media.parlamento-larioja.org/live/parlarioja/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Parlamento de La Rioja",
@@ -6237,7 +6231,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://media.parlamento-larioja.org/live/parlarioja_subtitulado/playlist.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Popular TV Melilla",
@@ -6341,8 +6335,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://streaming.ukt.eus/hls/test.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Goiena Eus",
@@ -6457,7 +6452,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://directo.tuwebtv.es/canal1.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "Arabí TV",
@@ -7000,9 +6995,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://live.gideo.video/americateve2/master.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 503: Backend unavailable, connection timeout"
     },
     {
       "name": "Estrella TV USA",
@@ -7316,7 +7310,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://streamwipr.pr/hls/stream/index.m3u8",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
     },
     {
       "name": "TV Cultura Brasil PT",
