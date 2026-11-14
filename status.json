@@ -1,13 +1,13 @@
 {
-  "checked_at_utc": "2026-11-13T12:21:50.299517+00:00",
+  "checked_at_utc": "2026-11-14T11:36:46.845742+00:00",
   "counts": {
-    "IT": 252,
-    "ES": 156,
+    "IT": 250,
+    "ES": 160,
     "WORLD": 90
   },
   "verified_counts": {
-    "IT": 220,
-    "ES": 156,
+    "IT": 217,
+    "ES": 160,
     "WORLD": 90
   },
   "access_limited_included": [
@@ -42,7 +42,8 @@
     "Radio 105 TV",
     "R101 TV",
     "Rai Radio 2 Visual Radio",
-    "Radio Montecarlo TV"
+    "Radio Montecarlo TV",
+    "Virgin Radio TV"
   ],
   "verification": "Verified entries: HLS manifest, variant and sample media bytes. Official Rai/Mediaset HTTP 403/451 entries are included but NOT playback-verified. No territorial or full playback guarantee.",
   "channels": [
@@ -760,9 +761,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons; HTTP Error 451: Unavailable For Legal Reasons",
+      "included_reason": "official_access_limited_not_verified"
     },
     {
       "name": "111 Tv",
@@ -897,9 +898,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Arte Network Orler",
@@ -1192,7 +1192,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Espansione Tv",
@@ -1258,7 +1258,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "Variants unavailable: <urlopen error timed out>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Extra Tv",
@@ -1627,8 +1627,9 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Nuova Tv 2",
@@ -2378,7 +2379,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "Sardegna 1",
@@ -2483,7 +2484,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'streaming.softwarecreation.it'. (_ssl.c:1011)>"
+      "detail": "<urlopen error timed out>"
     },
     {
       "name": "TRG Media",
@@ -2501,9 +2502,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "TRSP Tele Radio San Pietro",
@@ -2551,9 +2551,8 @@
       "country": "IT",
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "Tele Arena",
@@ -3132,7 +3131,7 @@
       "lcn": null,
       "source": "https://raw.githubusercontent.com/Free-TV/IPTV/master/lists/italy.md",
       "available": false,
-      "detail": "<urlopen error timed out>"
+      "detail": "Variants unavailable: <urlopen error timed out>"
     },
     {
       "name": "TeleCostaSmeralda",
@@ -4040,8 +4039,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://streaming004.gestec-video.com/hls/7TVCORDOBA.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "7TV Granada",
@@ -4255,8 +4255,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "PTV Málaga",
@@ -4320,8 +4321,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://5f71743aa95e4.streamlock.net:1936/CanalcostaTV/endirecto/playlist.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Condavisión",
@@ -4570,9 +4572,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://streaming004.gestec-video.com/hls/MIJAS.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "PTV Granada",
@@ -4687,8 +4688,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8",
-      "available": false,
-      "detail": "The read operation timed out"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4697,8 +4699,7 @@
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream2.parlamentodeandalucia.es/realizacion2/realizacion2/playlist.m3u8",
       "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "detail": "HLS manifest and media segment reachable"
     },
     {
       "name": "Parlamento de Andalucía",
@@ -4715,8 +4716,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://stream2.parlamentodeandalucia.es/realizacion4/realizacion4/playlist.m3u8",
-      "available": false,
-      "detail": "Variants unavailable: <urlopen error _ssl.c:994: The handshake operation timed out>"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable"
     },
     {
       "name": "TV Canaria (RTVC)",
@@ -5602,8 +5603,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8",
-      "available": false,
-      "detail": "Variants unavailable: HTTP Error 404: Not Found; HTTP Error 404: Not Found; HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "etv",
@@ -5873,8 +5875,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://video.telesafor.com/hls/video.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Univers TV",
@@ -5892,9 +5895,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://play.turesportmedia.com/hls/abr_tvalmassora/index.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "The read operation timed out"
     },
     {
       "name": "Punt 3 Vall Uixó",
@@ -6212,9 +6214,8 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://5924d3ad0efcf.streamlock.net/riojatv/riojatvlive/playlist.m3u8",
-      "available": true,
-      "detail": "HLS manifest and media segment reachable",
-      "included_reason": "verified"
+      "available": false,
+      "detail": "HTTP Error 404: Not Found"
     },
     {
       "name": "Parlamento de La Rioja",
@@ -6316,8 +6317,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Hamaika TV",
@@ -6404,8 +6406,9 @@
       "lcn": null,
       "source": "https://www.tdtchannels.com/lists/tv.m3u8",
       "url": "https://5940924978228.streamlock.net/j_Directo2/j_Directo2/playlist.m3u8",
-      "available": false,
-      "detail": "HTTP Error 404: Not Found"
+      "available": true,
+      "detail": "HLS manifest and media segment reachable",
+      "included_reason": "verified"
     },
     {
       "name": "Eusko Legebiltzarra",
