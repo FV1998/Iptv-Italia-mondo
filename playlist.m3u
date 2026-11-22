@@ -132,8 +132,6 @@ https://antennasicilialive.cdn.netrw.it/antennasicilialive/hls/ccr/antennasicili
 https://live-antennasud.cdn.netrw.it/antennasud/hls/ccr/antennasud/master.m3u8
 #EXTINF:-1 tvg-name="Antenna Sud Extra",Antenna Sud Extra
 https://live-antennasud.cdn.netrw.it/antennasud/hls/ccr/extra/master.m3u8
-#EXTINF:-1 tvg-name="Aristanis SuperTv",Aristanis SuperTv
-https://video2.azotosolutions.com:1936/supertvoristano/supertvoristano/playlist.m3u8
 #EXTINF:-1 tvg-name="Arte Network Orler",Arte Network Orler
 https://tsw.streamingwebtv24.it:1936/artenetwork/artenetwork/playlist.m3u8
 #EXTINF:-1 tvg-name="Aurora Arte",Aurora Arte
@@ -150,6 +148,8 @@ https://5f22d76e220e1.streamlock.net/canale6/canale6/playlist.m3u8
 https://srvx1.selftv.video/cafe/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Calabria tv",Calabria tv
 https://64b16f23efbee.streamlock.net/calabriatv/calabriatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Canale 10",Canale 10
+https://nrvideo1.newradio.it:1936/desxcerbht/desxcerbht/playlist.m3u8
 #EXTINF:-1 tvg-name="Canale 2",Canale 2
 https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8
 #EXTINF:-1 tvg-name="Canale 7",Canale 7
@@ -158,8 +158,6 @@ http://wms.shared.streamshow.it:80/canale7/canale7/playlist.m3u8
 https://59d7d6f47d7fc.streamlock.net/canale8/canale8/playlist.m3u8
 #EXTINF:-1 tvg-name="Casa Sanremo Tv",Casa Sanremo Tv
 https://router.xdevel.com/video0s975911-633/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-name="Castrovillari Tv",Castrovillari Tv
-http://msh0062.stream.seeweb.it/live/flv:stream00.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="Company Tv",Company Tv
 https://company.fluid.stream/CompanyTV/smil:Company_ALL.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Cremona 1",Cremona 1
@@ -192,8 +190,6 @@ https://64b16f23efbee.streamlock.net/canale157/canale157/playlist.m3u8
 https://5f204aff97bee.streamlock.net/GR_tv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Globo Tv",Globo Tv
 https://nrvideo1.newradio.it:1936/awrgaebshj/awrgaebshj/playlist.m3u8
-#EXTINF:-1 tvg-name="Gold Tv",Gold Tv
-https://5f11919dca3bd.streamlock.net/goldtv/goldtv/playlist.m3u8
 #EXTINF:-1 tvg-name="Icaro Tv Rimini",Icaro Tv Rimini
 https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
 #EXTINF:-1 tvg-name="Italia 2 Tv",Italia 2 Tv
@@ -204,8 +200,6 @@ https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
 https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S27391994/HVvPMzy/playlist.m3u8
 #EXTINF:-1 tvg-name="LaC Tv Calabria",LaC Tv Calabria
 https://f5842579ff984c1c98d63b8d789673eb.msvdn.net/live/S47282891/JWjL3xqPf4bX/playlist.m3u8
-#EXTINF:-1 tvg-name="Lazio Tv",Lazio Tv
-https://5f11919dca3bd.streamlock.net/laziotv/laziotv/playlist.m3u8
 #EXTINF:-1 tvg-name="Lira Tv",Lira Tv
 https://a928c0678d284da5b383f29ecc5dfeec.msvdn.net/live/S57315730/8kTBWibNteJA/playlist.m3u8
 #EXTINF:-1 tvg-name="Lombardia Tv",Lombardia Tv
@@ -218,8 +212,8 @@ https://5db313b643fd8.streamlock.net:443/MinformoTV/MinformoTV/playlist.m3u8
 https://64b16f23efbee.streamlock.net/servizio01/servizio01/playlist.m3u8
 #EXTINF:-1 tvg-name="NTI Canale 271",NTI Canale 271
 https://www.ntimedia.it/video/S0B/S0B_master.m3u8
-#EXTINF:-1 tvg-name="Nuova Tv 2",Nuova Tv 2
-https://nuovatv.net:8443/tv2/stream.m3u8
+#EXTINF:-1 tvg-name="Nuova Tv 1",Nuova Tv 1
+https://nuovatv.net:8443/tv/stream.m3u8
 #EXTINF:-1 tvg-name="Nuvola Tv",Nuvola Tv
 https://stream.nuvola.tv:8181/memfs/4aaa6328-1879-4ebf-b18a-498146d0c61c.m3u8
 #EXTINF:-1 tvg-name="Onda Novara Tv",Onda Novara Tv
@@ -260,6 +254,8 @@ https://stream6.xdevel.com/video0s976486-1271/stream/playlist.m3u8
 https://w1.mediastreaming.it/digiesse/livestream/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Ibiza",Radio Ibiza
 https://str48.fluid.stream/RadioIbizaTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-name="Radio Iglesias Visual Radio",Radio Iglesias Visual Radio
+https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio Immagine Tv",Radio Immagine Tv
 https://media.velcom.it:8081/RadioImmagineTV/index.fmp4.m3u8
 #EXTINF:-1 tvg-name="Radio Italia Cina Tv",Radio Italia Cina Tv
@@ -300,6 +296,8 @@ https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 https://video.azotosolutions.com:9553/radiotivuazzurralive/radiotivuazzurralive/playlist.m3u8
 #EXTINF:-1 tvg-name="Rai Sudtirol",Rai Sudtirol
 https://wzstreaming.rai.it/TVlive/smil:liveStream.smil/index.m3u8
+#EXTINF:-1 tvg-name="Ran Friul",Ran Friul
+https://load-balancer.azotosolutions.com/cdnedge34/ranfriul/playlist.m3u8
 #EXTINF:-1 tvg-name="Reggio Tv",Reggio Tv
 https://cdn10.streamshow.it/cloud-reggiotv/reggiotv/playlist.m3u8
 #EXTINF:-1 tvg-name="Rete 7 Tv",Rete 7 Tv
@@ -356,6 +354,8 @@ https://w1.mediastreaming.it/telebari/livestream/playlist.m3u8
 https://g2qd3exzy7an-hls-live.mariatvcdn.it/livetelebelluno/be0e3154b820953ce1a94a937bb2bb5d.sdp/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Boario",Tele Boario
 https://stream7.xdevel.com/video0s976425-1244/stream/playlist_dvr.m3u8
+#EXTINF:-1 tvg-name="Tele Bruzzano",Tele Bruzzano
+https://playerssl.telemia.tv/fileadmin/hls/Telebruzzano/telebruzzano_mediachunks.m3u8
 #EXTINF:-1 tvg-name="Tele Chiara",Tele Chiara
 http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Cupole",Tele Cupole
@@ -364,6 +364,8 @@ https://load-balancer.azotosolutions.com/cdnedge40/telecupole/playlist.m3u8
 https://59d7d6f47d7fc.streamlock.net/telefoggia/telefoggia/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Friuli",Tele Friuli
 https://5757bf2aa08e42248fb9b9d620f5d900.msvdn.net/live/S11646715/pE3ax0lT0rBd/playlist.m3u8
+#EXTINF:-1 tvg-name="Tele Gela",Tele Gela
+https://64b16f23efbee.streamlock.net/telegela/telegela/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Golfo RTG",Tele Golfo RTG
 https://nrvideo1.newradio.it:1936/vmbjrayngd/vmbjrayngd/playlist.m3u8
 #EXTINF:-1 tvg-name="Tele Granducato",Tele Granducato
@@ -410,8 +412,6 @@ https://ed04.top-ix.org/avtvlive/teleritmo/streaming/playlist.m3u8
 https://stream3.aswifi.it/giglitv/live/index.m3u8
 #EXTINF:-1 tvg-name="Tele Tricolore",Tele Tricolore
 https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
-#EXTINF:-1 tvg-name="Tele8 Tv",Tele8 Tv
-https://57068da1deb21.streamlock.net/teletv8/teletv8/playlist.m3u8
 #EXTINF:-1 tvg-name="Telecolor",Telecolor
 https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
 #EXTINF:-1 tvg-name="Telecolor Sicilia",Telecolor Sicilia
@@ -456,8 +456,6 @@ https://stream1.aswifi.it/radioyes/live/index.m3u8
 http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8
 #EXTINF:-1 tvg-name="TVL (TV Libera Pistoia)",TVL (TV Libera Pistoia)
 https://oj7lnw79lg82-hls-live.mariatvcdn.it/mariatvcdn/70564e1c6884c007c76f0c128d679eed.sdp/playlist.m3u8
-#EXTINF:-1 tvg-name="Tvm Palermo",Tvm Palermo
-https://5db313b643fd8.streamlock.net/tvmpa/tvmpa/playlist.m3u8
 #EXTINF:-1 tvg-name="Tvrs Tv",Tvrs Tv
 https://cdn8.streamshow.it/cloud-tvrs/tvrs/playlist.m3u8
 #EXTINF:-1 tvg-name="Umbria Tv",Umbria Tv
@@ -484,6 +482,8 @@ https://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8
 https://5db313b643fd8.streamlock.net/WLTV/WLTV/playlist.m3u8
 #EXTINF:-1 tvg-name="Zerouno Tv News",Zerouno Tv News
 https://5f22d76e220e1.streamlock.net/01news/01news/playlist.m3u8
+#EXTINF:-1 tvg-name="28 Kanala",28 Kanala
+https://streaming.28kanala.eus/hls/z.m3u8
 #EXTINF:-1 tvg-name="3Cat Càmeres del temps",3Cat Càmeres del temps
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Doraemon",3Cat Doraemon
@@ -494,6 +494,8 @@ https://fast-tailor.3catdirectes.cat/v1/channel/joc-de-cartes/hls.m3u8
 https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
 #EXTINF:-1 tvg-name="3Cat Vinagreta",3Cat Vinagreta
 https://fast-tailor.3catdirectes.cat/v1/channel/vinagreta/hls.m3u8
+#EXTINF:-1 tvg-name="7 TeleValencia",7 TeleValencia
+https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8
 #EXTINF:-1 tvg-name="7TV Aljarafe",7TV Aljarafe
 https://streaming004.gestec-video.com/hls/7TVALJARAFE.m3u8
 #EXTINF:-1 tvg-name="7TV Almería",7TV Almería
@@ -530,6 +532,8 @@ https://s.emisoras.tv:8081/chiclana/index.m3u8
 https://s.emisoras.tv:8081/lajanda/index.m3u8
 #EXTINF:-1 tvg-name="8TV Sierra de Cádiz",8TV Sierra de Cádiz
 https://s.emisoras.tv:8081/sierradecadiz/index.m3u8
+#EXTINF:-1 tvg-name="Afortunadas TV",Afortunadas TV
+https://cloudvideo.servers10.com:8081/8108/index.m3u8
 #EXTINF:-1 tvg-name="Ahora TV",Ahora TV
 https://tv.mediacp.eu/hls/ahoratv/ahoratv.m3u8
 #EXTINF:-1 tvg-name="Alacantí TV",Alacantí TV
@@ -554,8 +558,6 @@ https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfib
 https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8
 #EXTINF:-1 tvg-name="Burriana TeVe",Burriana TeVe
 https://stream.burrianateve.com:8443/hls/abr_burrianateve/index.m3u8
-#EXTINF:-1 tvg-name="Canal 10 Empordà",Canal 10 Empordà
-https://ventdelnord.tv:8080/escala/directe.m3u8
 #EXTINF:-1 tvg-name="Canal 13 Canarias",Canal 13 Canarias
 https://eu1.servers10.com:8081/8316/index.m3u8
 #EXTINF:-1 tvg-name="Canal 3 Biar HD",Canal 3 Biar HD
@@ -656,6 +658,8 @@ https://live.lancelot.tv/directo/fuerteventura.television/index.m3u8
 https://play.agenciastreaming.com:8081/futsalmafertv/index.m3u8
 #EXTINF:-1 tvg-name="Goiena Eus",Goiena Eus
 https://zuzenean.goienamedia.eus/goiena-telebista.m3u8
+#EXTINF:-1 tvg-name="Goierri Irrati TV",Goierri Irrati TV
+https://streaming.gitb.eus/hls/z.m3u8
 #EXTINF:-1 tvg-name="Guada TV Media",Guada TV Media
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12689&live=1
 #EXTINF:-1 tvg-name="GUKA TB",GUKA TB
@@ -666,6 +670,8 @@ https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8
 https://servidor.islahostingla.com:3542/live/huelvaconecta3live.m3u8
 #EXTINF:-1 tvg-name="Imás TV",Imás TV
 https://secure3.todostreaming.es/live/imastv-livestream.m3u8
+#EXTINF:-1 tvg-name="Interalmería TV",Interalmería TV
+https://interalmeria.tv/directo/live.m3u8
 #EXTINF:-1 tvg-name="Intercomarcal TV",Intercomarcal TV
 https://streamingtvi.gestec-video.com/hls/tvixa.m3u8
 #EXTINF:-1 tvg-name="iPROtv",iPROtv
@@ -696,24 +702,22 @@ https://cloudvideo.servers10.com:8081/8034/index.m3u8
 https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8
 #EXTINF:-1 tvg-name="Onda Cádiz",Onda Cádiz
 https://ondacadiztv.es:30443/octv/directo_multi/playlist.m3u8
-#EXTINF:-1 tvg-name="Onda Valencia",Onda Valencia
-https://cloudvideo.servers10.com:8081/8116/index.m3u8
 #EXTINF:-1 tvg-name="Parlamento de Andalucía",Parlamento de Andalucía
-https://stream2.parlamentodeandalucia.es/realizacion2/realizacion2/playlist.m3u8
+https://stream1.parlamentodeandalucia.es/realizacion1/realizacion1/playlist.m3u8
 #EXTINF:-1 tvg-name="Parlamento de Navarra",Parlamento de Navarra
 https://broadcasting.parlamentodenavarra.es/live/canal1/playlist.m3u8?DVR
 #EXTINF:-1 tvg-name="Piera TV",Piera TV
 https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Popular TV Cantabria",Popular TV Cantabria
 https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
+#EXTINF:-1 tvg-name="Popular TV Melilla",Popular TV Melilla
+https://5940924978228.streamlock.net/8009/ngrp:8009_all/playlist.m3u8
 #EXTINF:-1 tvg-name="Popular TV Murcia",Popular TV Murcia
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12690&live=1
 #EXTINF:-1 tvg-name="Punt 3 Vall Uixó",Punt 3 Vall Uixó
 https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8
 #EXTINF:-1 tvg-name="Radio Calima TV",Radio Calima TV
 https://nrvideo1.newradio.it:443/calimafm/calimafm/playlist.m3u8
-#EXTINF:-1 tvg-name="Real Madrid TV",Real Madrid TV
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 tvg-name="Real Madrid TV EN",Real Madrid TV EN
 https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8
 #EXTINF:-1 tvg-name="Ribera TV",Ribera TV
@@ -792,6 +796,8 @@ https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/pla
 https://crtvg-xabarinr3-schlive.flumotion.cloud/crtvglive/smil:channel8PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="TVG Pequerrech@s",TVG Pequerrech@s
 https://crtvg-xabarinr1-schlive.flumotion.cloud/crtvglive/smil:channel6PRG.smil/playlist.m3u8
+#EXTINF:-1 tvg-name="TVG Universo Castelao",TVG Universo Castelao
+https://crtvg-universo-castelao-schlive.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-name="TVG Xabarin",TVG Xabarin
 https://crtvg-infantil-schlive.flumotion.cloud/crtvglive/smil:channel5PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="TVM Córdoba",TVM Córdoba
@@ -806,6 +812,8 @@ https://5940924978228.streamlock.net/j_Directo2/j_Directo2/playlist.m3u8
 https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 #EXTINF:-1 tvg-name="VOTV",VOTV
 https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8
+#EXTINF:-1 tvg-name="Xaloa Telebista",Xaloa Telebista
+https://streaming.mediacast.pro/live/xaloa/playlist.m3u8
 #EXTINF:-1 tvg-name="À Punt",À Punt
 https://fastly.live.brightcove.com/1846756479408303045/eu-central-1/6057955885001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZWFxNWh4LmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNjA1Nzk1NTg4NTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU3OTU1ODg1MDAxIl0sImp0aSI6IjE4NDY3NTY0Nzk0MDgzMDMwNDUifQ.o6wb_VA-TVxl3ERgr7FKLlaTjY7smErmsf73QAydySE/playlist-hls-dvr.m3u8
 #EXTINF:-1 tvg-name="Aaj Tak India",Aaj Tak India
@@ -864,8 +872,6 @@ https://hls.livecdn.io/cheddar.com/cheddar/playlist.m3u8
 https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8
 #EXTINF:-1 tvg-name="CNN Internacional",CNN Internacional
 https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8
-#EXTINF:-1 tvg-name="Cosmos TV Perú",Cosmos TV Perú
-https://videoserver.tmcreativos.com:19360/tvcosmos/tvcosmos.m3u8
 #EXTINF:-1 tvg-name="Current Time TV",Current Time TV
 https://rferl-ingest.akamaized.net/hls/live/2121657/tvmc05/playlist.m3u8
 #EXTINF:-1 tvg-name="Digi24 Rumanía RO",Digi24 Rumanía RO
@@ -892,6 +898,8 @@ https://59d39900ebfb8.streamlock.net/globo-720p/globo-720p/playlist.m3u8
 https://hr-live.ard-mcdn.de/hr/live/hls/de/master.m3u8
 #EXTINF:-1 tvg-name="India Today EN",India Today EN
 https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8
+#EXTINF:-1 tvg-name="Islas Canarias TV",Islas Canarias TV
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=17089&live=1
 #EXTINF:-1 tvg-name="La7 Italia IT",La7 Italia IT
 https://d1chghleocc9sm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-evfku205gqrtf/Live.m3u8
 #EXTINF:-1 tvg-name="Latina Perú",Latina Perú
